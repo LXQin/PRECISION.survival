@@ -1,0 +1,22 @@
+Package: PRECISION.survival
+Title: Comparison of Prediction Accuracy of Normalization Methods in Survival Analysis
+Version: 0.1.1
+Date: 2021-05-13
+Authors@R: 
+    c(person("Andy", "Ni", email="ni.304@osu.edu", role=c("aut", "cre")),
+    person("Li-Xuan", "Qin", email="qinl@mskcc.org", role="aut"))
+Description: The package provides a nonparametric simulation platform for evaluation of prediction accuracy of three commonly used normalization methods 
+  (median normalization, quantile normalization, Variance stabilizing transformation) based on well-prepared datasets with survival outcome.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+Imports:
+  survival,
+  preprocessCore,
+  glmnet,
+  sva,
+  MASS,
+  vsn
+  
