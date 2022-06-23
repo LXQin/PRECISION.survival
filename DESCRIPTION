@@ -1,17 +1,18 @@
 Package: PRECISION.survival
-Title: Comparison of Prediction Accuracy of Normalization Methods in Survival Analysis
-Version: 0.1.1
-Date: 2021-05-13
+Title: Build Survival Prediction Models Using Microarray Expression Data with Batch Effect Correction by BatMan or ComBat Along with Normalizations
+Version: 1.1.0
 Authors@R: 
     c(person("Andy", "Ni", email="ni.304@osu.edu", role=c("aut", "cre")),
     person("Li-Xuan", "Qin", email="qinl@mskcc.org", role="aut"))
-Description: The package provides a nonparametric simulation platform for evaluation of prediction accuracy of three commonly used normalization methods 
-  (median normalization, quantile normalization, Variance stabilizing transformation) based on well-prepared datasets with survival outcome.
+Description: The package builds survival prediction model using miRNA expression data with batch effect correction using either BatMan or ComBat along with optional
+	data normalization methods. It evaluates the prediction accuracy of the model by calculating the concordance index (C-index) on a test dataset. The package 
+	also provides a function to simulate training and test datasets from the paired MSKCC miRNA expression datasets.
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.1.1
+RoxygenNote: 7.2.0
+biocViews:
 Imports:
   survival,
   preprocessCore,
@@ -19,4 +20,3 @@ Imports:
   sva,
   MASS,
   vsn
-  
