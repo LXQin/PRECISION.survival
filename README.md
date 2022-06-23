@@ -1,3 +1,3 @@
 # PRECISION.survival
 
-An R package that evaluates survival prediction accuracy of four commonly used data normalization methods that adjust for handling effects in microarray expression data.
+An R package that builds survival prediction models using microarray expression data with batch effect correction by BatMan or ComBat along with normalizations.
